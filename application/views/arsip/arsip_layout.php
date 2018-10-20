@@ -10,6 +10,7 @@
             <li class="breadcrumb-item">Dokumen Lelang</li>            
         </ol>
     </div>	
+	tes
     <!-- START PAGE CONTENT-->
     <div class="page-content fade-in-up">
 		<div class="row">

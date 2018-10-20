@@ -93,7 +93,7 @@ class Arsip extends CI_Controller {
 			$data["action"] = "UpdateData";
 			$data["autonumb"] = null;
 			$data["data_tabel"] = (array)$this->ArsipModel->getDataById($id);
-			$data["data_lemari"] = $this->ArsipModel->getDataWilayah();
+			$data["data_lemari"] = $this->ArsipModel->getDataLemari();
 
 			$this->load->view('header_admin');
 			$this->load->view('sidemenu',$menu);

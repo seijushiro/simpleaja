@@ -1,0 +1,26 @@
+.table-bordered tbody tr.even.selected, .table-bordered tbody tr.odd.selected {
+    background-color: #00B5B8;
+    color: #FFF;
+}
+
+.thead-custom th {
+	background-color:  #34495f;
+	color: white;
+}
+
+.table-bot>tbody>tr>td, .table-bot>tbody>tr>th, .table-bot>tfoot>tr>td, .table-bot>tfoot>tr>th {
+    border-bottom: 1px solid #e8e8e8 !important;
+    border-top: 0px !important;
+    vertical-align: middle;
+}
+.borderless{
+	padding: 0px 10px 0px 0px !important; 
+    border-width: 0px !important
+}
+    
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: #bdc3c7 !important;
+}    

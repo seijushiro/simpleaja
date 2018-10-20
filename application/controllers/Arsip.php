@@ -135,20 +135,20 @@ class Arsip extends CI_Controller {
 // HAPUS DATA 	=============================
 	public function DeleteData($id)
 	{	
-		// if($this->session->has_userdata("username")){
-		// 	$data = $this->ArsipModel->getCFile($id);
-		// 	$del = $this->ArsipModel->HapusData($id);
-		// 	if($del==true){
-		// 		$data_save = array("msg"=>"Proses Hapus Berhasil !");						
-		// 	}else{
-		// 		$data_save = array("msg"=>"Gagal Menghapus Data..");				
-		// 	}
-		// 	unlink('./uploads/arsip/'.$data->cfile);
-		// 	$this->session->set_flashdata('result_submit',$data_save);
-		// 	redirect(base_url("Proyek"));
-		// }else{
-		// 	redirect(base_url().'Login');
-		// }
+		if($this->session->has_userdata("username")){
+			$data = $this->ArsipModel->getCFile($id);
+			$del = $this->ArsipModel->HapusData($id);
+			if($del==true){
+				$data_save = array("msg"=>"Proses Hapus Berhasil !");						
+			}else{
+				$data_save = array("msg"=>"Gagal Menghapus Data..");				
+			}
+			unlink('./uploads/arsip/'.$data->cfile);
+			$this->session->set_flashdata('result_submit',$data_save);
+			redirect(base_url("Proyek"));
+		}else{
+			redirect(base_url().'Login');
+		}
 	}	
 
 
